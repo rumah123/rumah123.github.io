@@ -1,0 +1,82 @@
+#pre-reg {
+    .banner {
+        height: 600px !important;
+        .bg('mobile') {
+            background: url('https://d3p0bla3numw14.cloudfront.net/fpi/banner/FPI-2017-Mobile.jpg') no-repeat center center
+        }
+        .bg('tablet') {
+            background: url('https://d3p0bla3numw14.cloudfront.net/fpi/banner/FPI-2017-Tablet.jpg') no-repeat center center
+        }
+        .bg('desktop') {
+            background: url('https://d3p0bla3numw14.cloudfront.net/fpi/banner/FPI-2017-Desktop.jpg') no-repeat center center
+        }
+        &-desktop {
+            .bg('desktop')
+        }
+        &-tablet {
+            .bg('tablet')
+        }
+        &-mobile {
+            .bg('mobile')
+        }
+    }
+    .form-wrapper {
+        background-color: #0081c6;
+        padding-top: 5%;
+        .fpi-form {
+            padding-right: 30px;
+            padding-left: 30px;
+            .form-group {
+                color:#fff !important;
+
+                .form-space {}
+                .form-text {
+                    color: #fff !important;
+                }
+                .form-control {
+                    width: 100% !important;
+                    
+                }
+                .red-class {
+                    position: absolute;
+                    right: 3%;
+                    color: red !important;
+                    z-index: 10;
+                    padding: 10px;
+                    // margin: 10px 0 !important;
+                    @media(max-width: 767px) {
+                        top: 13px;
+                    }
+                }
+            }
+            .btn-fpi {
+                margin-top: 15px; 
+            }
+        }
+        .white-space {
+            width: 33%;
+            height: 70px;
+            background-color: #0081c6;
+            display: inline-block;
+        }
+        .btn {
+            float: right !important;
+        }
+        .btn-action {
+            width: 100% !important;
+        }
+        .recaptcha-demo {
+            width: auto;
+            height: 70px;
+            // float: right !important;
+        }
+        .alert {
+            margin: 20px 0 0 0 !important;
+        }
+    }
+
+        .modal-backdrop {
+            position:relative !important;
+        
+    }
+}

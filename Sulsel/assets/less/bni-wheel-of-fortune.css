@@ -1,0 +1,297 @@
+#wrapper-wof {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.65)), url(https://d3p0bla3numw14.cloudfront.net/microsite/bank-bni/fortune-of-wheel-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-logo {
+  width: 250px;
+  height: 100%;
+  margin: 10px 40px;
+}
+.tips-area {
+  margin: 50px auto !important;
+}
+.tips-area h2,
+.tips-area p {
+  color: #fff;
+}
+.tips-area .thumbnail-edit {
+  border: 5px solid rgba(0, 0, 0, 0.35) !important;
+  border-radius: 10px !important;
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+.title-event {
+  margin: 0 0 20px 0 !important;
+}
+.title-event h3 {
+  color: #fff;
+}
+.font-color-edit {
+  text-align: center !important;
+  color: darkslategray !important;
+}
+.font-color-edit .radio-edit form > input {
+  margin: 0 10px !important;
+}
+.modal-footer-edit {
+  text-align: center !important;
+  border-top: none !important;
+}
+.modal-footer-edit .btn-primary-edit {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  width: 200px;
+  height: 44px;
+  border-radius: 25px;
+}
+.no-undian {
+  font-size: 30px;
+  font-weight: bolder;
+}
+@-webkit-keyframes "hh" {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+  }
+}
+@keyframes "hh" {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #eaeaea;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Exo 2', sans-serif;
+}
+a {
+  color: #34495e;
+}
+#txt {
+  color: #eaeaea;
+}
+#wheel {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border: 8px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.75) 2px 7px 48px, rgba(0, 0, 0, 0.05) 0 4px 0;
+  transform: rotate(0deg);
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+}
+#wheel:before {
+  content: '';
+  position: absolute;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+#wheel div.sec {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 300px 300px 0;
+  border-color: #19c transparent;
+  transform-origin: 0px 0px;
+  left: 296px;
+  top: 296px;
+  opacity: 1;
+}
+#wheel div.sec:nth-child(1) {
+  transform: rotate(21deg);
+  -webkit-transform: rotate(21deg);
+  -moz-transform: rotate(21deg);
+  -o-transform: rotate(21deg);
+  -ms-transform: rotate(21deg);
+  border-color: #16a085 transparent;
+}
+#wheel div.sec:nth-child(2) {
+  transform: rotate(66deg);
+  -webkit-transform: rotate(66deg);
+  -moz-transform: rotate(66deg);
+  -o-transform: rotate(66deg);
+  -ms-transform: rotate(66deg);
+  border-color: #2980b9 transparent;
+}
+#wheel div.sec:nth-child(3) {
+  transform: rotate(111deg);
+  -webkit-transform: rotate(111deg);
+  -moz-transform: rotate(111deg);
+  -o-transform: rotate(111deg);
+  -ms-transform: rotate(111deg);
+  border-color: #34495e transparent;
+}
+#wheel div.sec:nth-child(4) {
+  transform: rotate(156deg);
+  -webkit-transform: rotate(156deg);
+  -moz-transform: rotate(156deg);
+  -o-transform: rotate(156deg);
+  -ms-transform: rotate(156deg);
+  border-color: #f39c12 transparent;
+}
+#wheel div.sec:nth-child(5) {
+  transform: rotate(201deg);
+  -webkit-transform: rotate(201deg);
+  -moz-transform: rotate(201deg);
+  -o-transform: rotate(201deg);
+  -ms-transform: rotate(201deg);
+  border-color: #d35400 transparent;
+}
+#wheel div.sec:nth-child(6) {
+  transform: rotate(246deg);
+  -webkit-transform: rotate(246deg);
+  -moz-transform: rotate(246deg);
+  -o-transform: rotate(246deg);
+  -ms-transform: rotate(246deg);
+  border-color: #c0392b transparent;
+}
+#wheel div.sec:nth-child(7) {
+  transform: rotate(291deg);
+  -webkit-transform: rotate(291deg);
+  -moz-transform: rotate(291deg);
+  -o-transform: rotate(291deg);
+  -ms-transform: rotate(291deg);
+  border-color: #0081c6 transparent;
+}
+#wheel div.sec:nth-child(8) {
+  transform: rotate(336deg);
+  -webkit-transform: rotate(336deg);
+  -moz-transform: rotate(336deg);
+  -o-transform: rotate(336deg);
+  -ms-transform: rotate(336deg);
+  border-color: #1b272c transparent;
+}
+#wheel div.sec .fa {
+  margin-top: -100px;
+  color: #fff;
+  position: relative;
+  z-index: 10000000;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  left: -160px;
+  top: -140px;
+  transform: rotate(21deg);
+  text-shadow: rgba(255, 255, 255, 0.1) 0px -1px 0px, rgba(0, 0, 0, 0.2) 0px 1px 0px;
+}
+#inner-wheel {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+  -moz-transition: all 6 cubic-bezier(0, 0.99, 0.44, 0.99);
+  -o-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+  -ms-transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+  transition: all 6s cubic-bezier(0, 0.99, 0.44, 0.99);
+}
+#spin {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -34px 0 0 -34px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 0px;
+  z-index: 1000;
+  background: #fff;
+  cursor: pointer;
+  font-family: 'Exo 2', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#spin:after {
+  content: "SPIN";
+  text-align: center;
+  line-height: 68px;
+  color: #CCC;
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 100000;
+  width: 68px;
+  height: 68px;
+  display: block;
+}
+#spin:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 149px 33px 64px;
+  border-color: transparent transparent #ffffff transparent;
+  top: -178px;
+  right: 1px;
+}
+#spin:active #inner-spin {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 5px inset;
+}
+#spin:active:after {
+  font-size: 15px;
+}
+#inner-spin {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -27px 0 0 -27px;
+  border-radius: 50%;
+  background: red;
+  z-index: 999;
+  box-shadow: #ffffff 0px -2px 0px inset, #ffffff 0px 2px 0px inset, rgba(0, 0, 0, 0.4) 0px 0px 5px;
+  background: #ffffff;
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(100%, #eaeaea));
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%);
+  background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%);
+  background: radial-gradient(ellipse at center, #ffffff 0%, #eaeaea 100%);
+}
+#shine {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0.99) 1%, rgba(255, 255, 255, 0.91) 9%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffffff), color-stop(1%, rgba(255, 255, 255, 0.99)), color-stop(9%, rgba(255, 255, 255, 0.91)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0.99) 1%, rgba(255, 255, 255, 0.91) 9%, rgba(255, 255, 255, 0) 100%);
+  background: -o-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0.99) 1%, rgba(255, 255, 255, 0.91) 9%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%, rgba(255, 255, 255, 0.99) 1%, rgba(255, 255, 255, 0.91) 9%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(ellipse at center, #ffffff 0%, rgba(255, 255, 255, 0.99) 1%, rgba(255, 255, 255, 0.91) 9%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.1;
+}
+.spin {
+  -webkit-animation: hh 180s;
+  animation: hh 180s;
+}

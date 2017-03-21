@@ -1,0 +1,285 @@
+/*
+  Header
+  */
+  @blue-color: #2980b9;
+  @white-default: #FFFFFF;
+  @red-color:#d43134;
+  .r123logo{
+    width:220px;
+    height: 37px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 6px;
+    img{
+      width:100%;
+    }
+ }
+ .navbar{
+  margin-bottom: 20px;
+}
+.navbar-default{
+	background-color: @white-default!important;
+  margin-bottom: 0;
+  height:59px;
+  .icon-bar{
+    background-color: @blue-color!important;
+  }
+  .navbar-brand{
+   display: inline-block;
+ }
+}
+.navbar-right{
+  .dropdown{
+    margin-top: 0 !important;
+  }
+}
+.member-nav{
+	li{
+		a{
+			color: @blue-color!important;
+			font-weight: 700;
+		}
+	}	
+}
+.navbar-nav{
+  .open{
+    .dropdown-menu{
+      @media (min-width: 768px){
+        position: absolute !important;
+      }
+    }
+  }
+}
+.user-info{
+  font-size: 13px!important;
+}
+[role="presentation"] a{
+  font-size: 13px!important;
+}
+.jumbotron {
+  margin: 60px 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.jumbotron.intro {
+  margin-top: 0;
+}
+
+.jumbotron .navbar {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.yamm {
+
+  // reset positions 
+  .nav, 
+  .collapse, 
+  .dropup, 
+  .dropdown {
+    position: static;
+    margin-top: 1px;
+    background-color: #FFF;
+  }  
+
+  // propagate menu position under container for fw navbars
+  .container {
+    position: relative;
+  }
+
+  // by default aligns menu to left
+  .dropdown-menu {
+    left: auto;
+    .flag{
+      background-image: url(http://images.id.ippstatic.com/assets/v5/img/sprites-logo.png);
+      background-repeat: no-repeat;
+      cursor: pointer;
+      display: inline-block;
+      height: 13px;
+      margin: 2px 7px 0 0;
+      width: 17px;
+    }
+    .hk-flag{
+      background-position: -6px -60px;
+    }
+    .sg-flag{
+      background-position: -26px -60px;
+    }
+    .my-flag{
+      background-position: -45px -60px;
+    }
+    .id-flag{
+      background-position: -62px -60px;
+    }
+    .in-flag{
+      background-position: -81px -60px;
+    }
+    .ph-flag{
+      background-position: -100px -60px;
+    }
+    .macau-flag{
+      background-position: -138px -60px;
+    }
+    .ip-flag{
+      background-position: -119px -60px;
+    }
+    .ip-flag{
+      background-position: -119px -60px;
+    }
+    .iptv_flag{
+      background-position: -6px -75px;
+    }
+    .commercialasia_flag{
+      background-position: -24px -75px;
+    }
+    .au_flag{
+      background-position: -42px -75px;
+    }
+    .it_flag{
+      background-position: -62px -75px;
+    }
+    .lu_flag{
+      background-position: -81px -75px;
+    }
+    .ch_flag{
+      background-position: -99px -75px;
+    }
+    .de_flag{
+      background-position: -119px -75px;
+    }
+    .fr_flag{
+      background-position: -140px -75px;
+    }
+  }
+
+  .dropdown{
+    .fa-bars{
+      font-size: 18px;
+      color: @blue-color;
+    }
+    a{
+      font-size: 16px;
+      color: @blue-color !important;
+    }
+    .komersial-menu-extended{
+      display: none;
+      width: 200px;
+      height: auto;
+      padding-left: 15px;
+      background-color: #fff;
+      position: absolute;
+      top: 22%;
+      left: 60%;
+      z-index: 9999;
+      li{
+        padding: 3px;
+        width: 200px;
+        list-style-type: none;
+      }
+    }
+    .ipnetworks-menu-extended{
+      display: none;
+      height: auto;
+      padding-left: 15px;
+      margin-left: 15px;
+      background-color: #fff;
+      position: absolute;
+      top: 79%;
+      left: 60%;
+      z-index: 9999;
+      overflow-y: scroll;
+      max-height: 300px;
+      li{
+        padding: 3px;
+        width: 200px;
+        list-style-type: none;
+      }
+    }
+  }
+  
+  // Content with padding 
+  .yamm .yamm-content .row ul li p:nth-child(2n){
+   border-left: 4px solid @blue-color;  
+ }
+ .yamm-content {
+  padding: 20px 30px;
+  @media (max-width: 568px){
+    height: 100%;
+    overflow: scroll;
+  }
+  .row{
+    ul{
+      margin-bottom: 10px;
+      li{
+        padding-right: 0;
+        padding-left: 0;
+        p{
+          border-left: 4px solid @red-color; 
+          padding-left: 5px;
+          font-size: 14px;
+        }
+        a{
+          font-size: 12px;
+          padding-left: 10px;
+        }
+      }
+    }
+    &:nth-of-type(2){
+      margin-top: 20px;
+    }
+  }
+}
+
+  // Fullwidth menu
+  .dropdown.yamm-fw .dropdown-menu {
+    left: 0; right: 0;
+  }
+
+}
+/* menu styes */
+.list-unstyled,
+.list-unstyled ul { min-width: 120px }
+
+@media (min-width: 768px){
+  .panel-group { width: 400px; }
+  .thumbnail { margin: 0; }
+}
+
+/* Grid demo styles */
+.grid-demo {
+  padding: 10px 30px;
+}
+
+.grid-demo [class*="col-"] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1em;
+  text-align: center;
+  line-height: 2;
+  background-color: #e5e1ea;
+  border: 1px solid #d1d1d1;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait) {
+  .navbar{
+    ul.navbar-nav{
+      margin: 0 -15px !important;
+    }
+    margin-bottom: 0 !important;
+  }
+  .yamm{
+    .dropdown{
+      margin-top: 0 !important;
+      .komersial-menu-extended{
+        display: block;
+        position: inherit;
+      }
+      .ipnetworks-menu-extended{
+        display: block;
+        position: inherit;
+      }
+    }
+  }
+  .navbar-fixed-top{
+    position: relative !important;
+  }
+}
