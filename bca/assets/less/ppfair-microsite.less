@@ -1,0 +1,214 @@
+@pp-color : #3b60a5;
+@pp-color-2: darken(@pp-color, 10%);
+@pp-color-3: lighten(@pp-color, 10%);
+h1 {
+    font-weight: bolder;
+}
+
+#ppro-fair {
+    #logo-area {
+        height: 3px;
+        margin-top: 0px;
+        z-index: 1000;
+        position: relative;
+        background-color: #3b60a5;
+        // background-color: @pp-color;
+        #logo {
+            margin: auto;
+            width: 127px;
+            height: 100%;
+            @media only screen and (max-width: 360px) and (orientation: portrait) {
+                width: 80px;
+                height: 100%;
+                left: 35%;
+                transform: scale(0.6);
+            }
+        }
+    }
+    .ppfair-container {}
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .padding-none {
+        padding: 0;
+    }
+    #hero-img {
+        // height: 880px;
+        #socmed {
+            position: absolute;
+            z-index: 1000;
+            top: 88%;
+            left: 3%;
+            transform: scale(1.2);
+            @media all and (min-width: 770px) and (max-width: 1024px) {
+                position: absolute;
+                z-index: 1000;
+                top: 84%;
+                left: 6%;
+            }
+            @media all and (min-width: 480px) and (max-width: 768px) {
+                position: absolute;
+                z-index: 1000;
+                top: 77%;
+                left: 6%;
+            }
+        }
+        #title {
+            position: absolute;
+            margin: 90px 30% 0 30%;
+            z-index: 1000;
+            transform: scale(1.2);
+            top: 3%;
+            @media all and (min-width: 770px) and (max-width: 1024px) {
+                transform: scale(1);
+                right: 0;
+                top: -11%;
+            }
+            @media all and (min-width: 480px) and (max-width: 768px) {
+                transform: scale(0.8);
+                right: -1%;
+                top: -23%;
+            }
+        }
+        #six-percent {
+            position: absolute;
+            right: 5%;
+            top: 22%;
+            transform: scale(1.2);
+            @media all and (min-width: 770px) and (max-width: 1024px) {
+                position: absolute;
+                right: -1%;
+                top: -7%;
+                transform: scale(0.7);
+            }
+            @media all and (min-width: 480px) and (max-width: 768px) {
+                position: absolute;
+                right: -1%;
+                top: -7%;
+                transform: scale(0.7);
+            }
+        }
+        #car {
+            position: absolute;
+            right: 15%;
+            top: 86%;
+            transform: scale(2);
+            @media all and (min-width: 770px) and (max-width: 1024px) {
+                position: absolute;
+                right: 2%;
+                top: 77%;
+                transform: scale(1.2);
+            }
+            @media all and (min-width: 480px) and (max-width: 768px) {
+                position: absolute;
+                right: 15%;
+                top: 74%;
+                transform: scale(1.2);
+            }
+        }
+        #tag {
+            position: absolute;
+            right: 10%;
+            top: 73%;
+            transform: scale(1);
+            @media all and (min-width: 770px) and (max-width: 1024px) {
+                position: absolute;
+                right: 10%;
+                top: 48%;
+                transform: scale(.8);
+            }
+            @media all and (min-width: 480px) and (max-width: 768px) {
+                position: absolute;
+                right: 10%;
+                top: 73%;
+                transform: scale(0.7);
+            }
+        }
+    }
+    #hero-img-mobile {
+        overflow: hidden;
+    }
+    #promo-consumer{
+        padding-top:90px;
+        padding-bottom:90px;
+    }
+    #sectionOne {
+        // height:880px;
+        // padding: 0 0 90px 0;
+        /*        background: url(https://d3p0bla3numw14.cloudfront.net/microsite/ppfair/ppro-fair.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;*/
+        // #hero-img {
+        //     height: auto;
+        // }
+        .transparent {
+            background-color: rgba(0, 0, 0, 0.3) !important;
+        }
+        #carousel-id {
+            height: 200px;
+            .cap-schedule {
+                height: 200px;
+            }
+        }
+        .none-background {
+            background-image: none !important;
+            background-image: -webkit-none !important;
+            background-image: -moz-none !important;
+            background-image: -ms-none !important;
+            background-image: -o-none !important;
+        }
+        .no-image {
+            .none-background;
+        }
+    }
+    #schedule-wrapper {
+        background-color: #f5f5f5;
+        #schedule {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            .member-profile {
+                margin: 20px 0;
+            }
+        }
+    }
+    #sectionTwo {
+        padding: 55px 0 120px 0;
+        background-color: @pp-color;
+        color: #fff;
+        .form-title {
+            margin: 20px 0 40px 0;
+        }
+        .reg-nav,
+        .nav-tabs {
+            margin: 0 10% 0 10% !important;
+            li {
+                float: right;
+                
+                &>a{
+                    color:#fff !important;
+                }
+                &.active {
+                    &>a {
+                        color: @pp-color !important;
+                    }
+                }
+                &:hover {
+                    &>a {
+                        color: @pp-color-2 !important;
+                        // background-color:@pp-color-3 !important;
+                    }
+                }
+                &:focus,
+                {
+                    &>a {
+                        color: @pp-color !important;
+                    }
+                }
+            }
+        }
+    }
+    #form-agent {
+        margin: 20px 0;
+    }
+}
