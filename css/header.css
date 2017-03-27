@@ -1,0 +1,251 @@
+/*
+  Header
+  */
+.r123logo {
+  width: 220px;
+  height: 37px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-left: 6px;
+}
+.r123logo img {
+  width: 100%;
+}
+.navbar {
+  margin-bottom: 20px;
+}
+.navbar-default {
+  background-color: #FFFFFF !important;
+  margin-bottom: 0;
+  height: 59px;
+}
+.navbar-default .icon-bar {
+  background-color: #2980b9 !important;
+}
+.navbar-default .navbar-brand {
+  display: inline-block;
+}
+.member-nav li a {
+  color: #2980b9 !important;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .navbar-nav .open .dropdown-menu {
+    position: absolute !important;
+  }
+}
+.user-info,
+.presentation {
+  font-size: 13px!important;
+}
+.jumbotron {
+  margin: 60px 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.jumbotron.intro {
+  margin-top: 0;
+}
+.jumbotron .navbar {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+  margin-top: 1px;
+  background-color: #FFF;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .dropdown-menu .flag {
+  background-image: url(http://images.id.ippstatic.com/assets/v5/img/sprites-logo.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  height: 13px;
+  margin: 2px 7px 0 0;
+  width: 17px;
+}
+.yamm .dropdown-menu .hk-flag {
+  background-position: -6px -60px;
+}
+.yamm .dropdown-menu .sg-flag {
+  background-position: -26px -60px;
+}
+.yamm .dropdown-menu .my-flag {
+  background-position: -45px -60px;
+}
+.yamm .dropdown-menu .id-flag {
+  background-position: -62px -60px;
+}
+.yamm .dropdown-menu .in-flag {
+  background-position: -81px -60px;
+}
+.yamm .dropdown-menu .ph-flag {
+  background-position: -100px -60px;
+}
+.yamm .dropdown-menu .macau-flag {
+  background-position: -138px -60px;
+}
+.yamm .dropdown-menu .ip-flag {
+  background-position: -119px -60px;
+}
+.yamm .dropdown-menu .ip-flag {
+  background-position: -119px -60px;
+}
+.yamm .dropdown-menu .iptv_flag {
+  background-position: -6px -75px;
+}
+.yamm .dropdown-menu .commercialasia_flag {
+  background-position: -24px -75px;
+}
+.yamm .dropdown-menu .au_flag {
+  background-position: -42px -75px;
+}
+.yamm .dropdown-menu .it_flag {
+  background-position: -62px -75px;
+}
+.yamm .dropdown-menu .lu_flag {
+  background-position: -81px -75px;
+}
+.yamm .dropdown-menu .ch_flag {
+  background-position: -99px -75px;
+}
+.yamm .dropdown-menu .de_flag {
+  background-position: -119px -75px;
+}
+.yamm .dropdown-menu .fr_flag {
+  background-position: -140px -75px;
+}
+.yamm .dropdown .fa-bars {
+  font-size: 18px;
+  color: #2980b9;
+}
+.yamm .dropdown a {
+  font-size: 16px;
+  color: #2980b9 !important;
+}
+.yamm .dropdown .komersial-menu-extended {
+  display: none;
+  width: 200px;
+  height: auto;
+  padding-left: 15px;
+  background-color: #fff;
+  position: absolute;
+  top: 22%;
+  left: 60%;
+  z-index: 9999;
+}
+.yamm .dropdown .komersial-menu-extended li {
+  padding: 3px;
+  width: 200px;
+  list-style-type: none;
+}
+.yamm .dropdown .ipnetworks-menu-extended {
+  display: none;
+  height: auto;
+  padding-left: 15px;
+  margin-left: 15px;
+  background-color: #fff;
+  position: absolute;
+  top: 79%;
+  left: 60%;
+  z-index: 9999;
+  overflow-y: scroll;
+  max-height: 300px;
+}
+.yamm .dropdown .ipnetworks-menu-extended li {
+  padding: 3px;
+  width: 200px;
+  list-style-type: none;
+}
+.yamm .yamm .yamm-content .row ul li p:nth-child(2n) {
+  border-left: 4px solid #2980b9;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+@media (max-width: 568px) {
+  .yamm .yamm-content {
+    height: 100%;
+    overflow: scroll;
+  }
+}
+.yamm .yamm-content .row ul {
+  margin-bottom: 10px;
+}
+.yamm .yamm-content .row ul li {
+  padding-right: 0;
+  padding-left: 0;
+}
+.yamm .yamm-content .row ul li p {
+  border-left: 4px solid #d43134;
+  padding-left: 5px;
+  font-size: 14px;
+}
+.yamm .yamm-content .row ul li a {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.yamm .yamm-content .row:nth-of-type(2) {
+  margin-top: 20px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+/* menu styes */
+.list-unstyled,
+.list-unstyled ul {
+  min-width: 120px;
+}
+@media (min-width: 768px) {
+  .panel-group {
+    width: 400px;
+  }
+  .thumbnail {
+    margin: 0;
+  }
+}
+/* Grid demo styles */
+.grid-demo {
+  padding: 10px 30px;
+}
+.grid-demo [class*="col-"] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1em;
+  text-align: center;
+  line-height: 2;
+  background-color: #e5e1ea;
+  border: 1px solid #d1d1d1;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .navbar {
+    margin-bottom: 0 !important;
+  }
+  .navbar ul.navbar-nav {
+    margin: 0 -15px !important;
+  }
+  .yamm .dropdown {
+    margin-top: 0 !important;
+  }
+  .yamm .dropdown .komersial-menu-extended {
+    display: block;
+    position: inherit;
+  }
+  .yamm .dropdown .ipnetworks-menu-extended {
+    display: block;
+    position: inherit;
+  }
+  .navbar-fixed-top {
+    position: relative !important;
+  }
+}
