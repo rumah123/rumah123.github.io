@@ -5,6 +5,7 @@
 	}
 	.form-control{
 		height: 38px !important;
+		font-size: 14px;
 	}
 	.error-msg{
 		color: #ee0101;
@@ -13,6 +14,11 @@
 	.kpr-wrapper{
 		.kpr-calculator{
 			background-color: #015daa;
+			.calculator-banner{
+				@media(min-width:992px){
+					height: 494px;
+				}
+			}
 			.kpr-title{
 				width: 100%;
 			    background-color: #015daa;
@@ -23,16 +29,15 @@
 			}
 			.bca-form-calculator{
 				margin: 0;
-    			padding: 20px;
+    			padding: 0 20px 20px 20px;
     			.form-horizontal{
     				margin-top: 15px;
     			}
     			.error-text{
+    				margin: 0;
     				span{
     					color: #ee0101;
 					    font-size: 11px;
-					    font-weight: 500;
-					    visibility: hidden;
     				}
     			}
     			label{
@@ -57,32 +62,34 @@
 					    box-shadow: 2px 2px 6px rgba(67, 55, 55, 0.7);
     				}
     			}
-			}
-			#bcaFormCalculator{
-				#resultForm{
-					.table{
-						margin-bottom: 0;
-						>tbody{
-							>tr{
-								>td{
-									padding: 8px 12px;
-								    color: #fff;
-								    font-size: 14px;
-								    border: none;
-								    &:first-child{
-								    	text-align: right;
-								    }
-								    &:last-child{
-								    	font-weight: 500;
-								    }
-								}
-							}
+			}	
+		}
+		#resultForm{
+			background-color: #fff;
+    		border-left: 1px solid #00b7f1;
+    		border-right: 1px solid #00b7f1;
+    		border-bottom: 1px solid #00b7f1;
+			.table{
+				margin-bottom: 0;
+				>tbody{
+					>tr{
+						>td{
+							padding: 8px 12px;
+						    color: #414141;
+						    font-size: 14px;
+						    border: none;
+						    &:first-child{
+						    	width: 35%;
+						    }
+						    &:last-child{
+						    	font-weight: 500;
+						    }
 						}
 					}
-					.kpr-calculator-butto{
-						margin: 0;
-					}
 				}
+			}
+			.kpr-calculator-butto{
+				margin: 0;
 			}
 		}
 		.kpr-form{

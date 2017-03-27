@@ -20,94 +20,132 @@
     <div class="kpr-wrapper">
         <div class="container">
             <div class="row kpr-calculator">
-                <div class="col-md-6">
-                     <div class="row">
-                          <div class="kpr-title"><h1>Kalkulator Pinjaman</h1></div>
-                          <div id="bcaFormCalculator" class="bca-form-calculator kpr-form-calculator">
-                               <form class="form-horizontal">
-                                    <div class="form-group">
-                                         <label class="col-sm-4 text-left">Plafon Pinjaman</label>
-                                         <label class="col-sm-1 kpr-rupiah-tag">Rp.</label>
-                                         <div class="col-sm-7">
-                                              <input type="text" class="form-control">
-                                              <p class="error-text"><span>Plafon harus diisi</span></p>
-                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                         <label class="col-sm-5 text-left">Jangka Waktu</label>
-                                         <div class="col-xs-9 col-sm-5">
-                                              <select class="selectpicker">
-                                                   <option selected='selected' value=''>5</option>
-                                                   <option>6</option>
-                                                   <option>7</option>
-                                                   <option>8</option>
-                                                   <option>9</option>
-                                                   <option>10</option>
-                                                   <option>11</option>
-                                                   <option>12</option>
-                                                   <option>13</option>
-                                                   <option>14</option>
-                                                   <option>15</option>
-                                                   <option>16</option>
-                                                   <option>17</option>
-                                                   <option>18</option>
-                                                   <option>19</option>
-                                                   <option>20</option>                            
-                                              </select>
-                                         </div>
-                                         <label class="col-xs-3 col-sm-2 text-right">Tahun</label>
-                                    </div>                       
-                                    <div class="form-group kpr-calculator-button">
-                                         <div class="col-sm-offset-5 col-sm-7 text-right">
-                                              <div class="row">
-                                                   <input id="resultCount" class="btn btn-default btn-block" type="button" value="HITUNG">
-                                              </div>
-                                         </div>
-                                    </div>
-                               </form>
-                               <div id="resultForm" style="display: none;">    
-                                    <table class="table">
-                                         <tbody>
-                                              <tr>
-                                                   <td>Plafon Pinjaman</td>
-                                                   <td>Rp 500.000.000</td>
-                                              </tr>
-                                              <tr>
-                                                   <td>Jangka Waktu</td>
-                                                   <td>10 <span>Tahun</span></td>
-                                              </tr>
-                                              <tr>
-                                                   <td>Angsuran tahun 1 - 2</td>
-                                                   <td>Rp 5.551.025</td>
-                                              </tr>
-                                              <tr>
-                                                   <td>Angsuran tahun 3 - 5</td>
-                                                   <td>Rp 5.733.778</td>
-                                              </tr>
-                                         </tbody>
-                                    </table>
-                                    <div class="form-group kpr-calculator-button clearfix" style="margin-top: 15px;">
-                                         <div class="col-sm-7 col-sm-push-5">
-                                              <div class="row text-right">
-                                                   <input id="buttonResult" class="btn btn-primary btn-block" type="button" value="HITUNG ULANG">
-                                                   <input id="buttonApply" class="btn btn-primary btn-block" type="button" value="AJUKAN" style="margin-left: 10px;">
-                                              </div>
-                                         </div>
-                                    </div>
-                              </div>
-                              <div class="kpr-label">
-                                    <ul>
-                                        <li>Angsuran tahun ke 6 sampai selesai mengikuti suku bunga yang berlaku nanti.</li>
-                                        <li>Perincian Kredit di atas hanya merupakan simulasi/estimasi biaya.</li>
-                                    </ul>
-                               </div> 
-                          </div>
-                     </div>
+                <div class="col-xs-12 .col-xs-push-12 col-md-6 col-md-push-6">
+                    <div class="row">
+                        <img class="calculator-banner img-responsive" src="https://www.klikhotel.com/klik/database/property/gallery/2210/1-519.jpg">
+                    </div>
                 </div>
-                <div class="col-md-6">
-                     <div class="row">
-                          <img src="https://www.klikhotel.com/klik/database/property/gallery/2210/1-519.jpg" class="img-responsive">
-                     </div>
+                <div class="col-xs-12 .col-xs-pull-12 col-md-6 col-md-pull-6">
+                    <div class="row">
+                        <div class="kpr-title"><h1>Kalkulator Pinjaman</h1></div>
+                        <div id="bcaFormCalculator" class="bca-form-calculator kpr-form-calculator">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 text-left">Harga Rumah</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">Rp</div>
+                                            <input type="text" class="form-control" value="700.000.000" disabled>
+                                        </div>
+                                        <p class="error-text"><span>Harga Rumah harus diisi</span></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 text-left">DP</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">Rp</div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <p style="margin: 5px 0 0;color: #fff;font-size: 11px;">(minimal DP adalah 30% dari harga rumah, khusus untuk rumah pertama)</p>
+                                        <p class="error-text"><span>DP harus diisi</span></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 text-left">Limit Pinjaman</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">Rp</div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <p style="margin: 5px 0 0;color: #fff;font-size: 11px;">(minimal limit pinjaman 250jt)</p>
+                                        <p class="error-text"><span>Limit Pinjaman harus diisi</span></p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 text-left">Jangka Waktu</label>
+                                    <div class="col-xs-9 col-sm-5">
+                                        <select class="selectpicker">
+                                            <option selected='selected' value=''>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>                            
+                                        </select>
+                                    </div>
+                                    <label class="col-xs-3 col-sm-2 text-right" style="line-height: 35px";>Tahun</label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-xs-12 col-sm-4 text-left">Suku Bunga</label>
+                                    <div class="col-xs-12 col-sm-7">
+                                        <select class="selectpicker">
+                                            <option selected='selected' value=''>Pilih</option>
+                                            <option>6,0% (fix 2 tahun)</option>
+                                            <option>6,88% (cap 3 tahun)</option>                           
+                                        </select>
+                                        <p class="error-text"><span>Suku Bunga harus diisi</span></p>
+                                    </div>
+                                </div>                       
+                                <div class="form-group kpr-calculator-button">
+                                    <div class="col-xs-12">
+                                        <div class="row text-right">
+                                            <input id="buttonReset" class="btn btn-primary btn-block" type="button" value="RESET" style="display: none;">
+                                            <input id="resultCount" class="btn btn-default btn-block" type="button" value="HITUNG">
+                                            <input id="buttonApply" class="btn btn-primary btn-block" type="button" value="AJUKAN" style="display: none;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- <div class="kpr-label">
+                                <ul>
+                                    <li>Angsuran tahun ke 6 sampai selesai mengikuti suku bunga yang berlaku nanti.</li>
+                                    <li>Perincian Kredit di atas hanya merupakan simulasi/estimasi biaya.</li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <hr style="margin: 0;border-top: 4px solid #00b7f1">
+            </div>
+            <div id="resultForm" class="row" style="display: none;">
+                <div class='col-xs-12 col-md-10 col-md-push-1'>  
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Harga Rumah</td>
+                                <td>Rp 500.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>DP</td>
+                                <td>10 <span>Tahun</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jumlah Pinjaman</td>
+                                <td>Rp 300.000.000</td>
+                            </tr>
+                            <tr>
+                                <td>Suku Bunga</td>
+                                <td>6,88 %</td>
+                            </tr>
+                            <tr>
+                                <td>Angsuran</td>
+                                <td>Rp 6.852.206</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="row kpr-form clearfix">
@@ -384,15 +422,6 @@
                         </div>
                         <div class='form-group'>
                             <div class='col-xs-12 col-md-4'>
-                                <p class='form-text'>Penghasilan Perbulan Rp<span>*</span></p>
-                            </div>
-                            <div class='col-xs-12 col-md-8'>
-                                <input class='form-control input-sm' type='number' placeholder="Min 2.000.000">
-                                <p class="text-right"><span class="error-msg">wajib diisi</span></p>
-                            </div>
-                        </div>
-                        <div class='form-group'>
-                            <div class='col-xs-12 col-md-4'>
                                 <p class='form-text'>Area Properti yang diinginkan<span>*</span></p>
                             </div>
                             <div class='col-xs-12 col-md-8'>
@@ -596,17 +625,23 @@
 <script>
 $(document).ready(function(){
     $('#resultCount').click(function(){
-        $('#bcaFormCalculator form').fadeOut('200', function() {
-            $('#resultForm').fadeIn('200');
+        $('#resultForm').slideToggle('200');
+        $('#resultCount').fadeOut('50', function(){
+            $('#buttonReset').fadeIn('50').css({'display':'inline-block'});
+            $('#buttonApply').fadeIn('50').css({'display':'inline-block'});
         });
     });
-    $('#buttonResult').click(function(){
-        $('#resultForm').fadeOut('200', function() {
-            $('#bcaFormCalculator form').fadeIn('200');
+    $('#buttonReset').click(function(){
+        $('#resultForm').slideToggle('200', function() {
+            $('#bcaFormCalculator form').fadeIn('50');
+            $('#buttonReset').fadeOut('50');
+            $('#buttonApply').fadeOut('50', function(){
+                $('#resultCount').fadeIn('50').css({'display':'inline-block'});
+            });
         });
     });
     $('#buttonApply').click(function(){
-        $('html, body').animate({scrollTop: +350},1000);
+        $('html, body').animate({scrollTop: +680},1000);
         return false;
     });
 
