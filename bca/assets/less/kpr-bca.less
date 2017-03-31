@@ -15,9 +15,10 @@
 		.kpr-calculator{
 			background-color: #015daa;
 			.calculator-banner{
-				@media(min-width:992px){
-					height: 494px;
-				}
+				/* updating banner img size 20170331 */
+				// @media(min-width:992px){
+				// 	height: 494px;
+				// }
 			}
 			.kpr-title{
 				width: 100%;
@@ -26,22 +27,35 @@
 			    -webkit-font-smoothing: antialiased;
 			    -moz-font-smoothing: antialiased;
 			    font-smoothing: antialiased;
+			    @media(max-width: 992px){
+			    	background-color: #fff;
+			    	padding: 10px;
+			    }
+			    h1{
+					@media(max-width: 992px){
+						color: #015daa;
+				    	font-size: 22px;
+				    }
+			    }
 			}
 			.bca-form-calculator{
 				margin: 0;
     			padding: 0 20px 20px 20px;
     			.form-horizontal{
-    				margin-top: 15px;
+    				margin: 30px 0;
     			}
     			.error-text{
     				margin: 0;
     				span{
     					color: #ee0101;
-					    font-size: 11px;
+					    font-size: 12px;
     				}
     			}
     			label{
     				color: #fff;
+    				@media(min-width: 768px){
+    					line-height: 35px;
+    				}
     			}
     			.kpr-label{
     				ul{
@@ -78,6 +92,7 @@
 						    color: #414141;
 						    font-size: 14px;
 						    border: none;
+						    vertical-align: middle;
 						    &:first-child{
 						    	width: 35%;
 						    }
@@ -95,25 +110,51 @@
 		.kpr-form{
 			padding: 40px 20px;
     		background-color: #f4f4f4;
-    		.input-file{
-    			border: 1px solid #ccc;
-			    padding: 8px 12px;
-			    width: 100%;
-			    background-color: #fff;
+    		@media(max-width: 992px){
+    			padding: 40px 0;
     		}
-    		.form-group{
-    			.checkbox{
-    				margin: 15px 0;
-    				padding: 0;
-    			}
-    			.form-text{
-    				margin-top: 8px;
-				    color: #00b7f1;
-				    font-size: 14px;
-				    span{
-				    	color: #ee0101;
-    					font-size: 16px;
-				    }
+    		.form-horizontal{
+    			.input-file{
+	    			border: 1px solid #ccc;
+				    padding: 8px 12px;
+				    width: 100%;
+				    background-color: #fff;
+	    		}
+	    		.form-group{
+	    			@media(max-width: 992px){
+	    				margin-bottom: 0;
+	    			}
+	    			.checkbox{
+	    				margin: 15px 0;
+	    				padding: 0;
+	    				label{
+	    					@media(max-width: 600px){
+	    						font-size: 11px;
+	    					}
+	    				}
+	    			}
+	    			.form-text{
+	    				margin-top: 8px;
+					    color: #00b7f1;
+					    font-size: 14px;
+					    @media(max-width: 600px){
+					    	font-size: 12px;
+					    }
+					    span{
+					    	color: #ee0101;
+	    					font-size: 16px;
+					    }
+	    			}
+	    		}
+				.radio{
+					@media(max-width: 992px){
+    					padding-top: 0;
+    				}
+    				.radio-inline{
+    					@media(max-width: 992px){
+	    					padding-top: 0;
+	    				}
+    				}
     			}
     		}
 		}
@@ -123,9 +164,20 @@
 			margin: 10px 0;
 		    font-weight: 500;
 		    color: #015daa;
+		    @media(max-width: 600px){
+		    	padding: 0 15px;
+		    	font-size: 10px;
+		    }
 		}
 		.kpr-footer-bg{
 			background-color: #015daa;
+		}
+		.copyright-footer{
+			font-size: 12px;
+			@media(max-width: 600px){
+		    	padding: 0 15px;
+		    	font-size: 10px;
+		    }
 		}
 	}
 }
