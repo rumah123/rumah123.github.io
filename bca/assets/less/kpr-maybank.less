@@ -1,0 +1,434 @@
+    @maybank-color-1: rgb(255, 188, 0);
+@maybank-color-2: #000;
+#kpr-maybank {
+    .kpr-calculator {
+        .banner-kpr {
+            img {
+                margin-top: 0 !important;
+            }
+            @media only screen and (max-width: 770px) {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .maybank-calc {
+            padding: 15px 15px 0 15px;
+            display: block;
+            // margin: 10px 0px;
+            background: #000 !important;
+            text-align: center;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -khtml-border-radius: 10px;
+            border-radius: 10px;
+            color: #fff;
+            text-align: left;
+            .form-horizontal {
+                margin: 15px 0px;
+                .kpr-title {
+                    h1 {
+                        font-size: 1.7em;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .form-group {
+                .text-right {
+                    span {
+                        color: #e1091d;
+                    }
+                }
+                .input-error {
+                    list-style: none !important;
+                    font-weight: normal;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 1px;
+                    right: 35px;
+                    color: #a94442;
+                    z-index: 10;
+                    // text-align: left;
+                    // color: @maybank-color-1;
+                    // font-weight: normal;
+                    // font-size: 13px;
+                    // margin-bottom: 0;
+                    // padding-top: 7px;
+                }
+                // .btn-file {
+                //     position: relative;
+                //     overflow: hidden;
+                //     input[type=file] {
+                //         position: absolute;
+                //         top: 0;
+                //         right: 0;
+                //         min-width: 100%;
+                //         min-height: 100%;
+                //         font-size: 100px;
+                //         text-align: right;
+                //         filter: alpha(opacity=0);
+                //         opacity: 0;
+                //         background: red;
+                //         cursor: inherit;
+                //         display: block;
+                //     }
+                //     input[readonly] {
+                //         background-color: white !important;
+                //         cursor: text !important;
+                //     }
+                // }
+            }
+            .required {
+                >label {
+                    &:after {
+                        content: " *";
+                        color: #e1091d;
+                    }
+                }
+                >.ttp {
+                    &.special {
+                        &:after {
+                            content: "";
+                        }
+                    }
+                }
+            }
+        }
+        // .background-tabs {
+        //     padding: 0;
+        //     border-top: 1px solid #414141;
+        .nav-background {
+            // border-bottom: 1px solid #ddd;
+            // background: #003b77;
+            .nav {
+                @media only screen and (max-width: 767px) {
+                    padding-left: none !important;
+                }
+                @media only screen and (max-width: 770px) {
+                    padding-left: none !important;
+                }
+            }
+            .nav-tabs {
+                border-bottom: none;
+                >li {
+                    min-width: 30%;
+                    text-align: center;
+                    margin: 0 2px 0 2px;
+                    background-color: @maybank-color-1;
+                    cursor: default;
+                    border: none;
+                    border-radius: 10px 10px 0 0;
+                    text-align: center;
+                    &.active {
+                        >a {
+                            color: #414141;
+                            background-color: @maybank-color-1;
+                            cursor: default;
+                            border-color: @maybank-color-1;
+                            border-radius: 10px 10px 0 0;
+                            font-weight: bold;
+                            margin: 0 2px 0 2px;
+                        }
+                    }
+                    >a {
+                        margin-right: 0;
+                        border-radius: 0;
+                        color: #fff;
+                        text-transform: uppercase;
+                        &:hover {
+                            border-radius: 10px 10px 0 0;
+                            border-color: @maybank-color-1;
+                            border-bottom: none;
+                        }
+                    }
+                    @media all and (min-device-width: 320px) and (max-device-width: 768px) {
+                        float: none;
+                        margin: 5px 0 0 0;
+                        min-width: 19px;
+                        padding: 0px 6px;
+                        border-radius: 10px;
+                        text-align: center;
+                        border-bottom: none;
+                        >li {
+                            min-width: 95%;
+                            text-align: center;
+                            background-color: @maybank-color-1;
+                            cursor: default;
+                            border: none;
+                            float: none;
+                            margin: 5px 9px 5px 9px;
+                            min-width: 19px;
+                            padding: 0px 6px;
+                            border-radius: 10px;
+                            text-align: center;
+                            border-bottom: none;
+                            &.active {
+                                >a {
+                                    color: #414141;
+                                    background-color: @maybank-color-1;
+                                    cursor: default;
+                                    border-color: @maybank-color-1;
+                                    border-radius: 10px;
+                                    font-weight: bold;
+                                    margin: 0 2px 0 2px;
+                                }
+                            }
+                            >a {
+                                margin-right: 0;
+                                border-radius: 0;
+                                color: #fff;
+                                text-transform: uppercase;
+                                &:hover {
+                                    border-radius: 10px 10px 0 0;
+                                    border-color: @maybank-color-1;
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+                        // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+                        //     float: none;
+                        //     margin: 5px 9px 5px 9px;
+                        //     min-width: 19px;
+                        //     padding: 0px 6px;
+                        //     border-radius: 10px;
+                        //     text-align: center;
+                        // }
+                        // @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+                        //     float: none;
+                        //     margin: 5px 9px 5px 9px;
+                        //     min-width: 19px;
+                        //     padding: 0px 6px;
+                        //     border-radius: 10px;
+                        //     text-align: center;
+                        // }
+                    }
+                }
+                .nav-tabs-maybank {
+                    >li {
+                        >a {
+                            &:hover {
+                                border-bottom: none;
+                                border: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // .kpr-content {
+        //     .nav-tabs {
+        //         >li {
+        //             &.active {
+        //                 >a {
+        //                     &:hover,
+        //                     &:focus {
+        //                         color: #414141;
+        //                         background-color: #ffca08;
+        //                         cursor: default;
+        //                         border: none;
+        //                         font-weight: bold;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        // end maybank
+        // .cust-data {
+        //     height: 620px;
+        //     margin-bottom: 30px;
+        //     border-bottom: 1px solid #f4f4f4;
+        // }
+        // .contact-data {
+        //     height: 230px;
+        //     margin-bottom: 30px;
+        //     border-bottom: 1px solid #f4f4f4;
+        //     h2 {
+        //         text-align: center;
+        //         margin-bottom: 30px;
+        //     }
+        // }
+        // .credit-sub {
+        //     margin-bottom: 30px;
+        //     h2 {
+        //         text-align: center;
+        //         margin-bottom: 30px;
+        //     }
+        //     .checkbox {
+        //         text-align: justify;
+        //         font-weight: normal;
+        //     }
+        // }
+        .maybank-kpr {
+            .background-content {
+                background: #f7f7f7;
+                min-height: 500px;
+                padding-bottom: 20px;
+                .kpr-simulation-content {
+                    color: #6b6b6b;
+                    padding: 0 15px;
+                    .kpr-calculator-count {
+                        margin-bottom: 25px;
+                    }
+                }
+                .tab-content {
+                    text-align: justify;
+                    .kpr-apply-now {
+                        .kpr-form-calculator {
+                            .text-mandatory {
+                                >span {
+                                    color: #d43134;
+                                }
+                                float: right;
+                            }
+                            .form-group {
+                                label {
+                                    span {
+                                        color: #e1091d;
+                                    }
+                                }
+                                .multi-checkboxes {
+                                    .checkbox {
+                                        margin-left: 5px;
+                                        >input{
+                                            margin-left: 0;
+                                        }
+                                        input {
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                                .text-left {
+                                    padding-top: 10px;
+                                    @media only screen and (max-width: 767px) {
+                                        padding-top: 0px;
+                                    }
+                                    select {
+                                        &.birth-date {
+                                            @media only screen and (max-width: 767px) {
+                                                margin-bottom: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .input-error {
+                                    text-align: left;
+                                    color: rgb(255, 188, 0);
+                                    font-weight: normal;
+                                    font-size: 13px;
+                                    margin-bottom: 0;
+                                    padding-top: 7px;
+                                }
+                                .red-class {
+                                    color: #D50014 !important;
+                                }
+                                // .credit-sub {
+                                //     margin-bottom: 30px;
+                                //     h2 {
+                                //         text-align: center;
+                                //         margin-bottom: 30px;
+                                //     }
+                                // }
+                                .checkbox {
+                                    text-align: justify;
+                                    font-weight: normal;
+                                }
+                                h2 {
+                                    border-bottom: 4px solid #ccc;
+                                    margin: 0;
+                                    padding: 10px 0;
+                                    font-size: 18px;
+                                    float: left;
+                                }
+                            }
+                        }
+                        .required {
+                            >label {
+                                &:after {
+                                    content: " *";
+                                    color: #e1091d;
+                                }
+                            }
+                            >.ttp {
+                                &.special {
+                                    &:after {
+                                        content: "";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .input-part-title {
+                    border-bottom: 1px solid #ccc;
+                    margin: 15px 0 33px;
+                    &::after {
+                        content: "";
+                        display: block;
+                        height: auto;
+                        clear: both;
+                    }
+                }
+                label {
+                    &.disclaimer {
+                        text-align: justify;
+                    }
+                }
+                // .well {
+                //     text-align: justify;
+                //     .img-table {
+                //         margin: 20px 0px;
+                //     }
+                // }
+                .table-responsive {
+                    table {
+                        &.table {
+                            thead {
+                                background: @maybank-color-1;
+                                color: @maybank-color-2;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .maybank-footer {
+            background-color: @maybank-color-1 !important;
+            border-top: 2px solid @maybank-color-2;
+            p {
+                &.tagline {
+                    height: 50px;
+                    margin-top: 6px;
+                    padding: 18px 0px;
+                    // font-size: 14px;
+                    font-weight: 900;
+                    font-size:10px;
+                    color: @maybank-color-2;
+                    span {
+                        padding: 10px 0px;
+                        width: 100%;
+                        @media only screen and (max-width: 767px) {
+                            display: none;
+                        }
+                        @media only screen and (max-width: 767px) {
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        .weburl {
+            background: #f7f7f7;
+            p {
+                margin: 10px 0px;
+                color: @maybank-color-2;
+            }
+        }
+        .footer-logo {
+            padding: 10px 0;
+        }
+    }
